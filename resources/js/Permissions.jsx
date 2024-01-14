@@ -1,6 +1,6 @@
 import { usePage } from "@inertiajs/inertia-react";
 
-const hasAnyPermission = ({ permissions }) => {
+const hasAnyPermission = ( permissions ) => {
     const { auth } = usePage().props
     let allPermissions = auth.permissions
     let hasPermission = false
