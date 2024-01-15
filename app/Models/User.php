@@ -46,9 +46,8 @@ class User extends Authenticatable
     public function getPermissionArray()
     {
         return $this->getAllPermissions()->mapWithKeys(function ($pr) {
-            return [$pr['name']];
+            return [$pr['name'] => true];
         });
     }
-
     
 }
